@@ -1,15 +1,26 @@
-# Facebook Login Tests
+# Testy Logowania na Facebooku  
 
-This repository contains automated tests for Facebook login functionality using Selenium WebDriver and Python.
+Ten projekt zawiera zautomatyzowane testy logowania na Facebooku z użyciem **Selenium WebDriver** oraz **Pythona**.  
 
+## 🚀 Scenariusze Testowe  
 
-## Test Scenarios
+- **`test_valid_login()`**: Test sprawdzający udane logowanie z prawidłowymi danymi użytkownika.  
+- **`test_invalid_login()`**: Test sprawdzający nieudane logowanie z błędnymi danymi użytkownika.  
 
-* `test_valid_login()`: Tests a successful login with valid credentials.
-* `test_invalid_login()`: Tests an unsuccessful login with invalid credentials.
+## ⚠️ Uwagi  
 
+- **Facebook może blokować zautomatyzowane logowania.**  
+  Jeśli napotkasz problemy, spróbuj użyć innego konta testowego lub ręcznie rozwiąż CAPTCHA.  
+- Kod może wymagać dostosowań w przypadku zmian na stronie Facebooka.  
+- Upewnij się, że używasz aktualnej wersji **ChromeDriver**, aby była zgodna z przeglądarką Chrome.  
 
-* **Facebook may block automated logins.** If you encounter issues, try using a different test account or solve the CAPTCHA manually.
-* This code is simplified and may require adjustments depending on changes to the Facebook website.
-* Make sure to keep your ChromeDriver version updated to match your Chrome browser version.
+## 📌 Wymagania  
 
+- Python  
+- Selenium  
+- ChromeDriver (zgodny z wersją Chrome)  
+
+## 🛠 Instalacja  
+
+```bash
+pip install selenium
